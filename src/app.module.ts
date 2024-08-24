@@ -10,11 +10,11 @@ import { UserModule } from './user/user.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
+      host: 'xpmcmysql.mysql.database.azure.com',
       port: 3306,
-      username: 'db-user',
-      password: 'db-password',
-      database: 'db-database-name',
+      username: 'XPMC_VM_FS',
+      password: 'Darshan@2003',
+      database: 'cobradb',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
